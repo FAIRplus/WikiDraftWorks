@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Local File Extension</title>
+    </head>
+    <body>
+    <h1>Local File Extension</h1>
+    <p>OpenRefine extension to load CSV files from a local environment. Compatible with OpenRefine 3.3 Default location
+        is the
+        <strong>Download</strong>
+        folder from the home user directory.
+    </p>
+    <h2>Configuration</h2>
+    <ul>
+        <li>In the OpenRefine installation folder locate file `refine.ini`</li>
+        <li>Open file and add the environment variable `EXT_LOCAL_FILE_SYSTEM` with the folder location value. Example:
+            `EXT_LOCAL_FILE_SYSTEM=/data/files`
+        </li>
+        <li>For Windows OS use the `refine.bat` to start OpenRefine, additional configuration in `refine.ini` won't be
+            loaded using the `openrefine.exe` executable. Example `EXT_LOCAL_FILE_SYSTEM=C:\\Users\\Home\\Desktop`
+        </li>
+        <li>Another option is add the environment variable to any Shell script that start OpenRefine. Example: `export
+            EXT_LOCAL_FILE_SYSTEM=/data/files`
+        </li>
+    </ul>
+    <p>
+        <strong>Note:</strong>
+        If you don't see any files from the defined location verify that the folder is a valid
+        location in your environment and files are with valid READ permissions.
+    </p>
+    </body>
+</html>
