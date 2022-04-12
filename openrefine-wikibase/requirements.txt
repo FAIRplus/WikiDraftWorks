@@ -1,0 +1,16 @@
+aioredis
+aiohttp
+aiodns
+aioresponses
+asynctest # required for aioresponses with Python < 3.8.
+pytest
+pytest-mock
+pytest-asyncio
+quart
+quart-cors
+docopt
+fuzzywuzzy
+python-Levenshtein
+unidecode
+funcparserlib
+python_dateutil
