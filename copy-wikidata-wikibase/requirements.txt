@@ -1,0 +1,5 @@
+setuptools~=49.1.0
+pandas~=1.0.5
+wikidataintegrator~=0.8.3
+joblib~=0.17.0
+shexer~=1.2.0

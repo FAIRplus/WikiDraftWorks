@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  wikidata-property-transfer:
+    build: .
+    container_name: wikidata-property-transfer
+    network_mode: host
+    environment:
+      - WIKIBASE=127.0.0.1
+      - WBUSER=WikibaseAdmin
+      - WBPASS=WikibaseDockerAdminPass

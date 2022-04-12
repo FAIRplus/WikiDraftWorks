@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  copy-wikidata-wikibase:
+    build: .
+    container_name: copy-wikidata-wikibase
+    network_mode: host
+    environment:
+      - WIKIBASE=127.0.0.1
+      - WBUSER=WikibaseAdmin
+      - WBPASS=WikibaseDockerAdminPass
+      - QID=Q29005901,Q30314624,Q29006144,Q97576324,Q3655009,Q28209017,Q47521925,Q422226,Q28209568,Q29005907,Q29006616,Q28890051,Q29006671,Q19847637,Q35120
+      - LANGUAGES=en,nl,fr,es,de
